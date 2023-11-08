@@ -26,7 +26,7 @@ namespace SuperApp
         {
             if (args.Name.Contains("SuperAppLogic"))
             {
-                var v = Assembly.LoadFrom("SuperAppLogicEncrypted.dll"); //<=====
+                var v = Assembly.LoadFrom("SuperAppLogicEncrypted.dll"); //<===== c'est ici qu'il faut appeler la blackbox pour déchiffrer
                 return v;
             }
             return null;
