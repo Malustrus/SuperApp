@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SuperAppLogic
 {
-    public class BenchProcess
+    public class SuperApp_ProcessManager
     {
 
         CancellationTokenSource cancellationTokenSource;

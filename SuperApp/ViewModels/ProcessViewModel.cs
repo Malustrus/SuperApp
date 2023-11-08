@@ -12,11 +12,11 @@ namespace SuperApp.ViewModels
 {
     public class ProcessViewModel : ObservableRecipient
     {
-        private readonly BenchProcess benchProcess;
+        private readonly SuperApp_ProcessManager benchProcess;
 
         public ObservableCollection<string> ProcessMessages { get; private set; } = new ObservableCollection<string>();
 
-        public ProcessViewModel(BenchProcess benchProcess)
+        public ProcessViewModel(SuperApp_ProcessManager benchProcess)
         {
             this.benchProcess = benchProcess;
             benchProcess.OnProcessStatusUpdated += BenchProcess_OnProcessStatusUpdated;

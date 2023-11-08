@@ -13,7 +13,7 @@ namespace SuperApp.ViewModels
         public ObservableRecipient CurrentViewModel { get; private set; }
         public ProcessViewModel ProcessViewModel { get; private set; }
 
-        public MainViewModel(BenchProcess benchProcess)
+        public MainViewModel(SuperApp_ProcessManager benchProcess)
         {
             ProcessViewModel = new ProcessViewModel(benchProcess);
             CurrentViewModel = ProcessViewModel;
