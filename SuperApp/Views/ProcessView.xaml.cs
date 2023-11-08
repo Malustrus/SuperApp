@@ -13,16 +13,17 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SuperAppLogic.Views
+namespace SuperApp.Views
 {
     /// <summary>
-    /// Logique d'interaction pour SecondView.xaml
+    /// Logique d'interaction pour FirstView.xaml
     /// </summary>
-    public partial class SecondView : UserControl
+    public partial class ProcessView : UserControl
     {
-        public SecondView()
+        public ProcessView()
         {
             InitializeComponent();
+            //MessageBox.Show("test");
         }
     }
 }

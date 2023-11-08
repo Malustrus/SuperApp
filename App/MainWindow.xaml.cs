@@ -13,17 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SuperAppLogic.Views
+namespace App
 {
     /// <summary>
-    /// Logique d'interaction pour FirstView.xaml
+    /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class FirstView : UserControl
+    public partial class MainWindow : Window
     {
-        public FirstView()
+        public MainWindow()
         {
             InitializeComponent();
-            //MessageBox.Show("test");
         }
     }
 }

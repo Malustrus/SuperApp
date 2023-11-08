@@ -28,7 +28,7 @@ namespace Launcher
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
-            var businessAssembly = Assembly.LoadFrom("SuperAppLogic.dll");
+            /*var businessAssembly = Assembly.LoadFrom("SuperAppLogic.dll");
             Type type = businessAssembly.GetType("SuperAppLogic.ViewModels.MainViewModel");
             ResourceDictionary rd = new ResourceDictionary();
             rd.Source = new Uri(@"pack://application:,,,/SuperAppLogic;component/Dictionary.xaml");
@@ -36,7 +36,13 @@ namespace Launcher
             var mainViewModel = Activator.CreateInstance(type);
             MainWindow = new MainWindow();
             MainWindow.DataContext = mainViewModel;
-            MainWindow.Show();
+            MainWindow.Show();*/
+            var exeAssembly = Assembly.LoadFrom("SuperApp.dll");
+            Type type = exeAssembly.GetType("SuperApp.App");
+
+            //AppDomain exeAppDomain = AppDomain.CreateDomain("Second app domain");
+            //exeAppDomain.Load(exeAssembly.FullName);
+            var app = Activator.CreateInstance(type);
         }
     }
 }

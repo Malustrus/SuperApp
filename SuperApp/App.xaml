@@ -1,0 +1,14 @@
+﻿<Application x:Class="SuperApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SuperApp"
+             xmlns:local_vm="clr-namespace:SuperApp.ViewModels"
+             xmlns:local_views="clr-namespace:SuperApp.Views"
+             
+             Startup="Application_Startup">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type local_vm:ProcessViewModel}">
+            <local_views:ProcessView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
